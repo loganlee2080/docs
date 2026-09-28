@@ -1,54 +1,136 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "theme": "maple",
+  "name": "StableMesh Docs",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
   "navigation": {
-    "pages": [
+    "languages": [
       {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
+        "language": "en",
+        "default": true,
+        "tabs": [
+          {
+            "tab": "Documentation",
+            "groups": [
+              {
+                "group": "Get Started",
+                "pages": [
+                  "index",
+                  "getting-started",
+                  "dashboard"
+                ]
+              },
+              {
+                "group": "Wallet & Cards",
+                "pages": [
+                  "deposit",
+                  {
+                    "group": "Cards",
+                    "root": "cards",
+                    "pages": [
+                      "cards/sensitive-info",
+                      "cards/freeze-unfreeze",
+                      "cards/top-up",
+                      "cards/transactions"
+                    ]
+                  },
+                  "create-card"
+                ]
+              },
+              {
+                "group": "Rewards & Pricing",
+                "pages": [
+                  "invite-earn",
+                  "affiliate"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Open API",
+            "groups": [
+              {
+                "group": "Overview",
+                "pages": [
+                  "developers/api",
+                  "developers/api/integration-guide",
+                  "developers/api/authentication",
+                  "developers/api/idempotency",
+                  "developers/api/errors"
+                ]
+              },
+              {
+                "group": "Resources",
+                "pages": [
+                  "developers/api/wallet",
+                  "developers/api/cards",
+                  "developers/api/transactions",
+                  "developers/api/webhooks"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "language": "zh",
+        "tabs": [
+          {
+            "tab": "文档",
+            "groups": [
+              {
+                "group": "快速上手",
+                "pages": [
+                  "zh/index",
+                  "zh/getting-started",
+                  "zh/dashboard"
+                ]
+              },
+              {
+                "group": "钱包与卡片",
+                "pages": [
+                  "zh/deposit",
+                  {
+                    "group": "卡片管理",
+                    "root": "zh/cards",
+                    "pages": [
+                      "zh/cards/sensitive-info",
+                      "zh/cards/freeze-unfreeze",
+                      "zh/cards/top-up",
+                      "zh/cards/transactions"
+                    ]
+                  },
+                  "zh/create-card"
+                ]
+              },
+              {
+                "group": "奖励与费率",
+                "pages": [
+                  "zh/invite-earn",
+                  "zh/fees-limits",
+                  "zh/affiliate"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "开发者",
+            "groups": [
+              {
+                "group": "开发者",
+                "pages": [
+                  "zh/developers/api"
+                ]
+              }
+            ]
+          }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
-    }
+    ]
   },
   "contextual": {
     "options": [
@@ -61,12 +143,5 @@
       "cursor",
       "vscode"
     ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
   }
 }
