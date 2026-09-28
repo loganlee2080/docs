@@ -49,30 +49,6 @@
                 ]
               }
             ]
-          },
-          {
-            "tab": "Open API",
-            "groups": [
-              {
-                "group": "Overview",
-                "pages": [
-                  "developers/api",
-                  "developers/api/integration-guide",
-                  "developers/api/authentication",
-                  "developers/api/idempotency",
-                  "developers/api/errors"
-                ]
-              },
-              {
-                "group": "Resources",
-                "pages": [
-                  "developers/api/wallet",
-                  "developers/api/cards",
-                  "developers/api/transactions",
-                  "developers/api/webhooks"
-                ]
-              }
-            ]
           }
         ]
       },
